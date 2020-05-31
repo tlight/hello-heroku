@@ -1,0 +1,1 @@
+web: java -cp target/uber.jar -Dclojure.server.repl="{:port 5555 :accept clojure.core.server/repl}" clojure.main -m app.core
