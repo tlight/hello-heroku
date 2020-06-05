@@ -21,7 +21,7 @@ $ make deploy
 The make commands are equivalent to the following:
 ```
 $ heroku install java
-$ heroku app:create hello-heroku
+# heroku apps:create hello-heroku
 
 $ clj -A:uberjar
 
