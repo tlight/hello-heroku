@@ -2,19 +2,23 @@
 
 A bare bones Clojure API server deployed to heroku as a jar.
 
-# Requirements
+## Requirements
 ```
 $ brew install clojure
 ```
 
-You will need to change the APP variable in the Makefile:
+## Quick Start
+
 ```
+$ git clone git@github.com:tlight/hello-heroku.git
+$ cd hello-heroku
+$ sed -i '' 's/hello-heroku/my-app-name/' Makefile
 $ make init
 $ make build
 $ make deploy
 ```
 
-Which is equivalent to the following:
+The make commands are equivalent to the following:
 ```
 $ heroku install java
 $ heroku app:create hello-heroku
